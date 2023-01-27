@@ -39,7 +39,7 @@ module "my_workerpool" {
 
   domain_name       = "spacelift.dev"
   min_size          = 2
-  max_size          = 3
+  max_size          = 4
   ami_id            = "ami-0ecc1e917fcb34066"
   worker_pool_id    = random_pet.this.id
   security_groups = [data.aws_security_group.this.id]
